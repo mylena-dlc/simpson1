@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(255, 233, 36, 0.994);
+}
+
+#contenaire{
+    width:80%;
+    margin:auto;
+}
+
+header{
+    background-color: rgb(58, 124, 255);
+    color: white;
+    text-align: center;
+}
+
+#simpson>img{
+    width: 100%;
+    vertical-align: top; 
+}
+
+nav{
+    flex: 2;
+    text-align: center;
+    color: white;
+}
+
+#main-content{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+article{    
+    text-align: center;
+    flex: 5;
+    padding: 2px;
+}
+
+h1{
+    color:  rgba(255, 200, 36, 0.994);
+    font-size: 40px;
+    text-align: left;
+}
+
+ul{
+    background-color:  rgb(58, 124, 255);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 15px;
+    list-style-type: none;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.list>li>a{
+    color:white;
+}
+    
+ul:hover :link :visited{
+    color: white;
+}
+
+p{
+    text-align: justify;
+}
+
+#groening{
+    border: 3px solid white;
+    object-fit: contain;
+    object-position: 50% 50%;
+    height: 200px;
+    width: auto;
+    vertical-align: middle;
+}
+
+aside{
+    background-color:rgb(58, 124, 255) ;
+    color: white;
+    text-align: justify;
+    text-align: center;
+    flex: 2;
+    padding: 15px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+h3{
+    font-size: 25px;
+    padding: 10px;
+}
+
+footer{
+    background-color: rgb(11, 11, 158);
+    text-align: center;
+    color: white;
+}
+
+/* Smartphones (portrait) ----------- */ 
+@media only screen and (max-width : 400px) {
+    #contenaire{
+        width: 100%;
+    }
+    #main-content{
+        flex-direction: column;
+    }
+    h2{
+        font-size: 30px;
+    }
+    nav{
+        padding: 10px;
+        font-size: 25px;
+        line-height: 100px;
+    }
+    h1{
+        text-align: center;
+    }
+    article{
+        padding: 20px;
+    }
+    aside{
+        padding: 30px;
+    }
+ }
+
+ /* iPads (portrait) ----------- */ 
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    #contenaire{
+        width: 100%;
+    }
+    #main-content{
+        flex-direction: column;
+    }
+    h2{
+        font-size: 50px;
+    }
+    nav{
+        padding-left: 200px;
+        padding-right: 200px;
+        font-size: 40px;
+    }
+    .list>li>a{
+       padding-top: 20px;
+       line-height: 50px;
+    }
+    h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    article{
+        padding: 20px;
+        font-size: 30px;
+    }
+    aside{
+        display: flex;
+        font-size: 20px;
+        text-align: center;
+        text-align: justify;
+        margin: 50px;
+    }
+     aside>p{
+        width: 50%;
+        font-size: 25px;
+        padding-left: 70px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-right: 50px;
+    }
+    h3{
+        margin-left: 23px;
+        font-size: 30px;
+    }
+    #groening{
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    }
